@@ -23,7 +23,7 @@ include __DIR__ . "/Partials/data/data.php"
         <main>
             <div class="cards-container container flex wrap">
                 <?php foreach ($database as $data) { ?>
-                    <div class="cards" style="border: 1px dotted green">
+                    <div class="cards">
                         <img src="<?php echo $data['poster']; ?>" alt="<?php echo $data['title']; ?>">
                         <h3><?php echo $data['title']; ?></h3>
                         <h4><?php echo $data['author']; ?></h4>
