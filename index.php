@@ -14,14 +14,6 @@ include __DIR__ . "/Partials/data/data.php"
 </head>
 
 <body>
-    <!--Esercizio di oggi: PHP Dischi Milestone 1
-Descrizione
-Stampare a schermo una decina di dischi musicali (vedi grafica allegata sotto)
-Utilizzare solo PHP per ora e non AJAX.
-Stampa direttamente i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi.
-Utilizzare Html, Sass e PHP
-Scegliete pure le immagini che volete utilizzare
-Nome repo per consegnare l’esercizio: php-ajax-dischi-->
     <div class="app">
 
         <header class="container-logo">
@@ -33,18 +25,15 @@ Nome repo per consegnare l’esercizio: php-ajax-dischi-->
         <main>
 
             <div class="cards-container">
+                <?php foreach ($database as $data) { ?>
 
-                <div class="card">
-
-                    <img src="https://www.mondadoristore.it/img/23-6451-THA-SUPREME/ea019075949602/BL/BL/08/ZOM/?tit=23+6451&aut=THA+SUPREME" alt="">
-
-                    <h3 class="">23 6451</h3>
-
-                    <h4 class="">Tha Supreme</h4>
-
-                    <h5 class="">2020</h5>
-
-                </div>
+                    <div class="card">
+                        <img src="<?php echo $data['poster']; ?>" alt="">
+                        <h3><?php echo $data['title']; ?></h3>
+                        <h4><?php echo $data['author']; ?></h4>
+                        <h5><?php echo $data['year']; ?></h5>
+                    </div>
+                <?php } ?>
 
             </div>
 
