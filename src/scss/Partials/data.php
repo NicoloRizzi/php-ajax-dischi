@@ -60,6 +60,5 @@ $database = [
         "title" => "Garbage",
         "author" => "NITRO",
         "year" => "2020"
-    ],    
+    ],
 ];
-echo json_encode ($database);

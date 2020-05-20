@@ -1,3 +1,7 @@
+<?php
+include __DIR__ . "/Partials/data/data.php"
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,9 +49,9 @@ Nome repo per consegnare l’esercizio: php-ajax-dischi-->
             </div>
 
         </main>
-    <!-- TEMPLATE-->
-    <script id="entry-template" type="text/x-handlebars-template">
-        <div class="entry">
+        <!-- TEMPLATE-->
+        <script id="entry-template" type="text/x-handlebars-template">
+            <div class="entry">
             <h1>{{title}}</h1>
             <div class="body">
             {{body}}
