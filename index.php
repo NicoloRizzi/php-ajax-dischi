@@ -32,7 +32,7 @@ Nome repo per consegnare l’esercizio: php-ajax-dischi-->
 
                 <div class="card">
 
-                    <img src="https://www.mondadoristore.it/img/23-6451-THA-SUPREME/ea019075949602/BL/BL/08/ZOM/?tit=23+6451&aut=THA+SUPREME" class="card__poster" alt="">
+                    <img src="https://www.mondadoristore.it/img/23-6451-THA-SUPREME/ea019075949602/BL/BL/08/ZOM/?tit=23+6451&aut=THA+SUPREME" alt="">
 
                     <h3 class="">23 6451</h3>
 
@@ -45,12 +45,21 @@ Nome repo per consegnare l’esercizio: php-ajax-dischi-->
             </div>
 
         </main>
+    <!-- TEMPLATE-->
+    <script id="entry-template" type="text/x-handlebars-template">
+        <div class="entry">
+            <h1>{{title}}</h1>
+            <div class="body">
+            {{body}}
+            </div>
+        </div>
+    </script>
 
     </div>
     <!-- SCRIPT -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-<script src="dist/scripts/main.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+    <script src="dist/scripts/main.js"></script>
 </body>
 
 </html>
