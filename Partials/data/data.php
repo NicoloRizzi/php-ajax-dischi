@@ -20,7 +20,7 @@ $database = [
     ],
     [
         "poster" => "https://www.mondadoristore.it/img/Ultimo-pianeti-Ultimo/ea805141174382/BL/BL/08/ZOM/?tit=Ultimo%3A+pianeti&aut=Ultimo",
-        "title" => "Ultimo :Pianeti",
+        "title" => "Ultimo: Pianeti",
         "author" => "Ultimo",
         "year" => "2019",
     ],
