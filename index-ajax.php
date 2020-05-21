@@ -22,9 +22,9 @@
         </main>
     </div>
     <!-- TEMPLATE-->
-    <script id="entry-template" type="text/x-handlebars-template">
+    <script id="cards-template" type="text/x-handlebars-template">
     <div class="cards">
-        <img src="{{ 'poster' }}" alt="{{ 'title' }}">
+        <img src="{{ 'url' }}" alt="{{ 'title' }}">
         <h3>{{ 'title' }}</h3>
         <h4>{{ 'author' }}</h4>
         <h5>{{ 'year' }}</h5>
