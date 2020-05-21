@@ -1,5 +1,5 @@
 <?php
-include __DIR__ . "/Partials/data/data.php"
+include_once __DIR__ . "/Partials/data/data.php";
 ?>
 
 <!DOCTYPE html>
@@ -34,5 +34,4 @@ include __DIR__ . "/Partials/data/data.php"
         </main>
     </div>
 </body>
-
 </html>
