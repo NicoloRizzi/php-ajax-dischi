@@ -18,7 +18,7 @@ $(document).ready(function () {
                     url: res[i].poster,
                     title: res[i].title,
                     author: res[i].author,
-                    year: res[i].author
+                    year: res[i].year
                 }
                 //output finale
                 var output = template(context);
