@@ -17,17 +17,25 @@
             </div>
         </header>
         <main>
-            <div class="cards-container container flex wrap">
-            </div>
+            <select name="genres" id="genres">
+                <option value="All" selected>All</option>
+                <option value="Trap">Trap</option>
+                <option value="Pop">Pop</option>
+                <option value="Rock">Rock</option>
+                <option value="Indie">Indie</option>
+                <option value="Rap">Rap</option>
+            </select>
+            <div class="cards-container container flex wrap"></div>
         </main>
     </div>
     <!-- TEMPLATE-->
     <script id="cards-template" type="text/x-handlebars-template">
-    <div class="cards">
-        <img src="{{ 'url' }}" alt="{{ 'title' }}">
-        <h3>{{ 'title' }}</h3>
-        <h4>{{ 'author' }}</h4>
-        <h5>{{ 'year' }}</h5>
+        <div class="cards {{ genre }}">
+        <img src="{{ url }}" alt="{{ title }}">
+        <h3>{{ title }}</h3>
+        <h4>{{ author }}</h4>
+        <h5>{{ year }}</h5>
+        <strong>{{ genre }}</strong>
     </div>
     </script>
     <!-- SCRIPT-->

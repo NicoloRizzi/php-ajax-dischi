@@ -18,7 +18,8 @@ $(document).ready(function () {
                     url: res[i].poster,
                     title: res[i].title,
                     author: res[i].author,
-                    year: res[i].year
+                    year: res[i].year,
+                    genre: res[i].genre
                 }
                 //output finale
                 var output = template(context);
@@ -29,5 +30,14 @@ $(document).ready(function () {
             console.error('Errore nella chiamata AJAX');
         }
     });
-    
+    $('#genres').change(function(){
+        var genre = $(this).val();       
+        if (genre === 'All') {
+            $('.cards').show();
+        } else {
+            $('.cards').hide();
+            $('.cards.' + genre).show();
+        }
+        
+    }); 
 }); // End Doc
